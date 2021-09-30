@@ -1,0 +1,68 @@
+การติดตั้ง
+การพึ่งพา
+scikit-learn ต้องการ:
+
+หลาม (>= 3.7)
+NumPy (>= 1.14.6)
+SciPy (>= 1.1.0)
+จ๊อบลิบ (>= 0.11)
+threadpoolctl (>= 2.0.0)
+Scikit-learn 0.20 เป็นเวอร์ชันสุดท้ายที่รองรับ Python 2.7 และ Python 3.4 scikit-learn 0.23 และใหม่กว่าต้องใช้ Python 3.6 หรือใหม่กว่า scikit-learn 1.0 และใหม่กว่าต้องใช้ Python 3.7 หรือใหม่กว่า
+
+ความสามารถในการวางแผน Scikit-learn (เช่น ฟังก์ชันที่ขึ้นต้นด้วยplot_และคลาสที่ลงท้ายด้วย "Display") ต้องใช้ Matplotlib (>= 2.2.2) สำหรับการรันตัวอย่าง Matplotlib >= 2.2.2 เป็นสิ่งจำเป็น ตัวอย่างบางส่วนต้องการ scikit-image >= 0.14.5 ตัวอย่างบางส่วนต้องการแพนด้า >= 0.25.0 บางตัวอย่างต้องการ seaborn >= 0.9.0
+
+การติดตั้งผู้ใช้
+หากคุณมีการติดตั้ง numpy และ scipy อยู่แล้ว วิธีที่ง่ายที่สุดในการติดตั้ง scikit-learn คือการใช้ pip
+
+pip ติดตั้ง -U scikit-learn
+หรือconda:
+
+conda install -c conda-forge scikit-learn
+เอกสารที่มีรายละเอียดมากขึ้นคำแนะนำการติดตั้ง
+
+บันทึกการเปลี่ยนแปลง
+ดูบันทึกการเปลี่ยนแปลง สำหรับประวัติการเปลี่ยนแปลงที่โดดเด่นของ scikit-learn
+
+การพัฒนา
+เรายินดีต้อนรับผู้มีส่วนร่วมรายใหม่ในทุกระดับประสบการณ์ เป้าหมายของชุมชน scikit-learn คือการให้ความช่วยเหลือ ต้อนรับ และมีประสิทธิภาพ คู่มือการพัฒนา มีข้อมูลรายละเอียดเกี่ยวกับรหัสเอื้อเอกสารการทดสอบและอื่น ๆ เราได้รวมข้อมูลพื้นฐานบางอย่างไว้ใน README นี้
+
+ลิงค์สำคัญ
+repo ซอร์สโค้ดอย่างเป็นทางการ: https://github.com/scikit-learn/scikit-learn
+ดาวน์โหลดรุ่น: https://pypi.org/project/scikit-learn/
+ตัวติดตามปัญหา: https://github.com/scikit-learn/scikit-learn/issues
+รหัสแหล่งที่มา
+คุณสามารถตรวจสอบแหล่งที่มาล่าสุดด้วยคำสั่ง:
+
+โคลน git https://github.com/scikit-learn/scikit-learn.git
+การบริจาค
+ต้องการเรียนรู้เพิ่มเติมเกี่ยวกับการมีส่วนร่วมกับการเรียนรู้ scikit โปรดดู คู่มือการบริจาค
+
+การทดสอบ
+หลังการติดตั้ง คุณสามารถเปิดชุดทดสอบได้จากภายนอกไดเร็กทอรีต้นทาง (คุณจะต้องpytestติดตั้ง >= 5.0.1):
+
+pytest sklearn
+ดูหน้าเว็บhttps://scikit-learn.org/dev/developers/advanced_installation.html#testing สำหรับข้อมูลเพิ่มเติม
+
+สามารถควบคุมการสร้างตัวเลขสุ่มระหว่างการทดสอบโดยการตั้งค่าSKLEARN_SEEDตัวแปรสภาพแวดล้อม
+ส่งคำขอดึง
+ก่อนที่จะเปิด Pull Request ให้ดูที่หน้า Contributing ฉบับเต็มเพื่อให้แน่ใจว่าโค้ดของคุณสอดคล้องกับหลักเกณฑ์ของเรา: https://scikit-learn.org/stable/developers/index.html
+
+ประวัติโครงการ
+โครงการนี้เริ่มต้นขึ้นในปี 2550 โดย David Cournapeau เป็นโครงการ Google Summer of Code และตั้งแต่นั้นมาอาสาสมัครจำนวนมากก็ได้มีส่วนร่วม ดูหน้าเกี่ยวกับเราสำหรับรายชื่อผู้ร่วมให้ข้อมูลหลัก
+
+ปัจจุบันโครงการนี้ดูแลโดยทีมอาสาสมัคร
+
+หมายเหตุ : scikit-learn เดิมเรียกว่า scikits.learn
+
+ช่วยเหลือและสนับสนุน
+เอกสาร
+เอกสาร HTML (รุ่นเสถียร): https://scikit-learn.org
+เอกสาร HTML (เวอร์ชันพัฒนา): https://scikit-learn.org/dev/
+คำถามที่พบบ่อย: https://scikit-learn.org/stable/faq.html
+การสื่อสาร
+รายชื่อผู้รับจดหมาย: https://mail.python.org/mailman/listinfo/scikit-learn
+Gitter: https://gitter.im/scikit-learn/scikit-learn
+ทวิตเตอร์: https://twitter.com/scikit_learn
+กองล้น: https://stackoverflow.com/questions/tagged/scikit-learn
+การสนทนา Github: https://github.com/scikit-learn/scikit-learn/discussions
+เว็บไซต์: https://scikit-learn.org
